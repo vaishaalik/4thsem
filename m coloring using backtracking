@@ -22,6 +22,15 @@ def graphColoringUtil(graph, color_nb, colors, n):
             if graphColoringUtil(graph, color_nb, colors, n+1): return True
             # If there is no solution, remove color (BACKTRACK)
             colors[n] = 0
+            colors[n] = 0
+#We test the algorithm for the following graph and test whether it is 3 colorable:
+
+#   (3)---(2)
+#    |   / |
+#    |  /  |
+#    | /   |
+#   (0)---(1)
+
 vertex_nb = 4
 # nb of colors
 color_nb = 3
