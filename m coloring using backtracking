@@ -1,3 +1,8 @@
+import time
+
+# starting time
+start = time.time()
+
 n=0
 def is_safe(n, graph, colors, c):
     # Iterate trough adjacent vertices
@@ -46,6 +51,19 @@ graph = [
 
 #beginning with vertex 0
 if graphColoringUtil(graph, color_nb, colors, 0):
-    print ('colors')
+    print (colors)
 else:
     print ("No solutions")
+
+#sleeping for 1 second to get 10 seconds runtime
+time.sleep(1)
+
+# program body ends
+
+# end time
+end = time.time()
+
+tt=end-start
+# total time taken
+print("Runtime of the program is")
+print(tt)
