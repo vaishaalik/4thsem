@@ -54,24 +54,24 @@ def get_color_for_state(state):
 
 
 def main():
-    #starting time
-    start =  time.time()
 
     for state in states:
         colors_of_states[state] = get_color_for_state(state)
 
     print(colors_of_states)
-    #sleeping for 1 second to get 10 seconds runtime
-    time.sleep(1)
-
-    # program body ends
-
-    # end time
-    end = time.time()
-
-    tt=end-start 
-    # total time taken
-    print("Runtime of the program is")
-    print(tt)
-
+   
+#starting time
+start =  time.time()
 main()
+#sleeping for 1 second to get 10 seconds runtime
+time.sleep(1)
+
+# program body ends
+
+# end time
+end = time.time()
+
+tt=end-start 
+# total time taken
+print("Runtime of the program is")
+print(tt)
